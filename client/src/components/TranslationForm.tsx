@@ -15,7 +15,7 @@ const TranslationForm: React.FC = () => {
   }, []);
 
   const simulateStreamingTranslation = async (text: string) => {
-    const sampleTranslation = 'the translated response in streaming way will appear here';
+    const sampleTranslation = `${text}`;
     const chunks = sampleTranslation.split('');
     
     for (const chunk of chunks) {
